@@ -35,7 +35,7 @@ app.use('/api/notes', noteRoutes);
 app.use('/api/user', userRoutes);
 
 // MongoDB connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/notesapp', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://smartsiranjeevi2:9RmuXWZAdhVtfD8v@cluster0.xphstb0.mongodb.net/?retryWrites=true&w=majority&appName=notesapp', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
